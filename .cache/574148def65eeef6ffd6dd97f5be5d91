@@ -1,0 +1,1 @@
+#b ((((Equal.mirror Bool) ((Bool.and b) Bool.true)) b) (and_b_true b))

@@ -1,0 +1,71 @@
+//and_false_b(b: Bool): Bool.and(false, b) == false
+//  refl
+
+//and_b_false(b: Bool): Bool.and(b, false) == false
+//  case b {
+//    true: refl
+//    false: refl
+//  }!
+
+//or_true_b(b: Bool): Bool.or(true, b) == true
+//    refl
+  
+//or_b_true(b: Bool): Bool.or(b, true) == true
+//  case b {
+//    true: refl
+//    false: refl
+//  }!
+
+ 
+//or_false_b(b: Bool): Bool.or(false, b) == b
+//  refl
+
+
+//eql_b_b(b: Bool): Bool.eql(b, b) == true
+//  case b{
+//    true: refl
+//    false: refl
+//  }!
+
+
+//demorgan_0(a: Bool, b: Bool): Bool.not(Bool.and(a,b)) == Bool.or(Bool.not(a),Bool.not(b))
+//  case a {
+//    true: refl
+//    false: refl
+//  }!
+
+
+//demorgan_1(a: Bool, b: Bool): Bool.not(Bool.or(a, b)) == Bool.and(Bool.not(a), Bool.not(b))
+//  case a {
+//    true: refl
+//    false: refl
+//  }!
+
+//half_double_theorem(n: Nat): Nat.half(Nat.double(n)) == n
+//    case n {
+//        zero: refl
+//        succ:
+//            let ind = half_double_theorem(n.pred)
+//            let app = apply(Nat.succ, ind)
+//            app 
+//
+//    }! 
+
+
+add_0_n(n: Nat): (0 + n) == n
+    refl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

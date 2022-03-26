@@ -1,0 +1,1 @@
+#b (((b #b (((Equal Bool) ((Bool.or b) Bool.true)) Bool.true)) ((Equal.refl Bool) Bool.true)) ((Equal.refl Bool) Bool.true))

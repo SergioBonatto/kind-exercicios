@@ -1,0 +1,2 @@
+and_true_b(b: Bool): Bool.and(true, b) == b
+  refl

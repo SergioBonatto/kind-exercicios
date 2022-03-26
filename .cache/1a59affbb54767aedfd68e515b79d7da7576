@@ -1,0 +1,1 @@
+#n (((n #n (((Equal Nat) (Nat.half (Nat.double n))) n)) ((Equal.refl Nat) Nat.zero)) #n.pred !ind = (half_double_theorem n.pred); !app = ((((((Equal.apply Nat) Nat) (Nat.half (Nat.double n.pred))) n.pred) Nat.succ) ind); app)

@@ -1,0 +1,1 @@
+@(b:Bool) (((Equal Bool) ((Bool.or Bool.true) b)) Bool.true)

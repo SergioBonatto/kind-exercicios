@@ -1,0 +1,6 @@
+and_b_true(b: Bool): Bool.and(b, true) == b
+ // ?a-18
+  case b {
+    true: refl
+    false: refl
+  }!

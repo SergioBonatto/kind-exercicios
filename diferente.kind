@@ -1,0 +1,13 @@
+//double_negation(b: Bool): Bool.not(Bool.not(b)) == b
+//  ?a
+
+
+
+
+double_negation_rfl(b: Bool): Bool.not(Bool.not(b)) == b
+  case b {
+    true: refl
+    false: refl
+  }!
+
+//  Equal.refl(Bool)

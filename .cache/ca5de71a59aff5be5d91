@@ -1,0 +1,1 @@
+#n (((n #n Nat) Nat.zero) #n.pred (((n.pred #n.pred Nat) Nat.zero) #n.pred.pred (Nat.succ (Nat.half n.pred.pred))))

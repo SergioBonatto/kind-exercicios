@@ -1,0 +1,1 @@
+@(a:Bool) @(b:Bool) (((Equal Bool) (Bool.not ((Bool.and a) b))) ((Bool.or (Bool.not a)) (Bool.not b)))

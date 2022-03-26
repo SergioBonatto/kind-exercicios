@@ -1,0 +1,1 @@
+#a #b (((a #a (((Equal Bool) (Bool.not ((Bool.and a) b))) ((Bool.or (Bool.not a)) (Bool.not b)))) ((Equal.refl Bool) ((Bool.or (Bool.not Bool.true)) (Bool.not b)))) ((Equal.refl Bool) ((Bool.or (Bool.not Bool.false)) (Bool.not b))))

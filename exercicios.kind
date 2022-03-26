@@ -1,0 +1,79 @@
+// Basico
+
+inc(a: Nat): Nat
+  ?a
+
+dec(a: Nat): Nat
+  ?a
+
+neg(b: Bool): Bool
+  ?a
+
+and(a: Bool, b: Bool): Bool
+  ?a
+
+or(a: Bool, b: Bool): Bool
+  ?a
+
+// Recursão
+
+Metade(a: Nat): Nat
+  ?a
+
+Dobro(a: Nat): Nat
+  ?a
+
+Soma(a: Nat, b: Nat): Nat
+  ?a
+
+Mul(a: Nat, b: Nat): Nat
+  ?a
+
+// 4 - 5 = 0
+// 5 - 4 = 1
+Sub(a: Nat, b: Nat): Nat
+  ?a
+
+fatorial(a: Nat): Nat
+  ?a
+
+//div 1/2 = 0
+//div x/0 = 0
+//div 5/2 = 2
+//arredonda pra baixo
+div(a: Nat, b: Nat): Nat
+  ?b
+
+// Dado 2 números, volta verdadeiro se os 2 forem iguais e falso caso diferentes 
+equal(a: Nat, b: Nat): Bool
+  ?a
+   
+// if A > B == True else false
+gtn(a: Nat, b: Nat): Bool
+  ?a
+
+// if A > B == False else true
+// Nao pode usar Bool.not
+ltn(a: Nat, b: Nat): Bool 
+  ?e
+
+// Lista
+
+//Retorna o primeiro valor de uma lista
+//Se a lista for vazia, volta 0
+Primeiro_elemento<A: Nat>(xs: List<Nat>): Nat
+  ?a
+
+//Retorna a lista sem o primeiro valor
+// input    ->  output
+//[1,2,3,4] -> [2,3,4]
+//[5,8,1,3] -> [8,1,3]
+ListaSemOPrimeiro<A: Nat>(xs: List<Nat>): List<Nat>
+  ?b
+
+//Inverte todos os valores da lista
+//[1,2,3,4] -> [4,3,2,1]
+//[5,8,1,3] -> [3,1,8,5]
+
+Revert(xs: List<Nat>): List<Nat>
+  ?a

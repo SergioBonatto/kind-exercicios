@@ -1,0 +1,9 @@
+and_b_true(b: Bool): Bool.and(b,true) == b
+  case b {
+    true: refl
+    false: refl
+  }!
+
+
+right_and_b_true(b: Bool): b == Bool.and(b, true)
+  mirror(and_b_true(b))
