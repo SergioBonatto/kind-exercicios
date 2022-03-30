@@ -1,0 +1,1 @@
+#n (((n #n (((Equal Bool) ((Nat.gte (Nat.succ n)) n)) Bool.true)) ((Equal.refl Bool) Bool.true)) #n.pred !ind = (gte_succ_n_n n.pred); ind)

@@ -1,0 +1,1 @@
+#e !a = {+42:(((((Nat.eql +1) +1) # *) Nat) Empty)}; !b = ((((((Equal.rewrite Nat) (Nat.succ Nat.zero)) Nat.zero) e) #x (((((Nat.eql +1) x) # *) Nat) Empty)) a); b

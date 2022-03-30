@@ -1,0 +1,1 @@
+@(n:Nat) (((Equal Bool) ((Nat.gte (Nat.succ n)) +0)) Bool.true)

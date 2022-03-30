@@ -43,24 +43,83 @@
 
 //half_double_theorem(n: Nat): Nat.half(Nat.double(n)) == n
 //    case n {
-//        zero: refl
+//        zero: refl=
 //        succ:
 //            let ind = half_double_theorem(n.pred)
 //            let app = apply(Nat.succ, ind)
 //            app 
-//
 //    }! 
 
 
-add_0_n(n: Nat): (0 + n) == n
-    refl
+//add_0_n(n: Nat): (0 + n) == n
+//    refl
+
+//lte_0_n(n: Nat): Nat.lte(0, n) == true
+//    refl
+
+//gte_n_0(n:Nat): Nat.gte(n, 0) == true
+//    refl
+
+//eql_n_n(n: Nat): Nat.eql(n, n) == true
+//    case n {
+//        zero: refl
+//        succ: 
+//            let ind = eql_n_n(n.pred)
+//            ind
+//    }!
 
 
+//is_even_double_n(n: Nat): Nat.is_even(Nat.double(n)) == true
+//    case n {
+//        zero: refl
+//        succ: 
+//            let ind = is_even_double_n(Nat.succ(n.pred))
+//            ind           
+//    }!
+
+//gte_succ_n_0(n: Nat): Nat.gte(Nat.succ(n), 0) == true
+//    refl
+
+//gte_succ_n_n(n: Nat): Nat.gte(Nat.succ(n), n) == true
+//   case n {
+//        zero: refl
+//        succ: 
+//            let ind = gte_succ_n_n(n.pred)
+//            ind
+//    }!
+
+//xablau(e: Empty): 1 == 0
+//    case e {
+//      }!
+
+//onde_neq_zero(e: 1 == 0): Empty
+//    ?a-
+
+//two: if true then Nat else String
+//   2 
 
 
+// essa não foi
+//let two = 2 :: if true then Nat else String
 
+//one_neq_zero(e: 1 == 0):Empty
+//    let a = 42 :: if Nat.eql(1,1) then Nat else Empty
+//    let b = a :: rewrite x in (if Nat.eql(1,x) then Nat else Empty ) with e 
+//    b
 
+//three_neq_two: 3 != 2
+//    (lambda)
+//    let lambda0 = apply(Nat.pred, lambda)
+//    let lambda1 = apply(Nat.pred, lambda0)
+//    let lambda2 = apply(Nat.is_zero, lambda1)
+//   let lambda3 = mirror(lambda2)
+//    Bool.true_neq_false(lambda3)
 
+//not_a_neq_a(b: Bool): Bool.not(b) != b
+//    case b {
+//        true: (lambda) Bool.false_neq_true(lambda)
+//        false:(lambda) Bool.true_neq_false(lambda)
+//        }!
 
 
 

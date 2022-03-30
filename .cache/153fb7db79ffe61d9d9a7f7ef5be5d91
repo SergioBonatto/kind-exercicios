@@ -1,0 +1,1 @@
+#n (((n #n (((Equal Bool) (Nat.is_even (Nat.double n))) Bool.true)) ((Equal.refl Bool) Bool.true)) #n.pred !ind = (is_even_double_n (Nat.succ n.pred)); ind)

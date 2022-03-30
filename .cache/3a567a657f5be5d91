@@ -1,0 +1,1 @@
+#e (e #e (((Equal Nat) (Nat.succ Nat.zero)) Nat.zero))

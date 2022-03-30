@@ -1,0 +1,1 @@
+#n (((n #n (((Equal Bool) ((Nat.eql n) n)) Bool.true)) ((Equal.refl Bool) Bool.true)) #n.pred !ind = (eql_n_n n.pred); ind)
