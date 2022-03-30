@@ -117,13 +117,46 @@
 
 //not_a_neq_a(b: Bool): Bool.not(b) != b
 //    case b {
-//        true: (lambda) Bool.false_neq_true(lambda)
-//        false:(lambda) Bool.true_neq_false(lambda)
+//        true: (e) Bool.false_neq_true(e)
+//        false:(e) Bool.true_neq_false(e)
 //        }!
 
 
 
+//or_true_a_neq_false(a: Bool): Bool.or(true, a) != false
+   // //?a-37-2
+  // // case a {
+     //  // true:
+//       (e) Bool.true_neq_false(e)
+      // // false: ?b-37-2
+     // // }!
 
+//add_succ_n_m(n: Nat, m: Nat): Nat.add(Nat.succ(n), m) == Nat.succ(Nat.add(n, m))
+//refl
+
+//or_a_true_neq_false(a: Bool): Bool.or(a, true) != false
+//    case a {
+//        true: (e) Bool.true_neq_false(e)
+//        false: (e) Bool.true_neq_false(e)
+//        }!
+
+//and_false_a_neq_true(a: Bool): Bool.and(false, a) != true
+//  (e) Bool.false_neq_true(e)
+
+//and_a_false_neq_true(a: Bool): Bool.and(a, false) != true
+//    case a {
+//        true: (e) Bool.false_neq_true(e)
+//        false: (e) Bool.false_neq_true(e)
+//    }!
+
+add_succ_n_m(n: Nat, m: Nat): Nat.add(Nat.succ(n), m) == Nat.succ(Nat.add(n, m))
+    case n {
+        zero: refl //?a-19
+        succ: 
+            let ind = add_succ_n_m(n)
+            let app = apply(Nat.succ, ind)
+            app
+    }!
 
 
 

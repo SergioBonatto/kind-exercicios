@@ -1,0 +1,1 @@
+#a (((a #a (Not (((Equal Bool) ((Bool.and a) Bool.false)) Bool.true))) #e (Bool.false_neq_true e)) #e (Bool.false_neq_true e))

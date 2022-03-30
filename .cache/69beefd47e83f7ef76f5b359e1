@@ -1,0 +1,1 @@
+@(n:Nat) @(m:Nat) (((Equal Nat) ((Nat.add (Nat.succ n)) m)) (Nat.succ ((Nat.add n) m)))
