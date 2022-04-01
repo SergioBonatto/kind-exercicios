@@ -1,1 +1,1 @@
-#n #m ((Equal.refl Nat) (Nat.succ ((Nat.add n) m)))
+#n #m (((n #n (((Equal Nat) ((Nat.add (Nat.succ n)) m)) (Nat.succ ((Nat.add n) m)))) ((Equal.refl Nat) (Nat.succ ((Nat.add Nat.zero) m)))) #n.pred ((Equal.refl Nat) (Nat.succ ((Nat.add (Nat.succ n.pred)) m))))

@@ -149,15 +149,26 @@
 //        false: (e) Bool.false_neq_true(e)
 //    }!
 
-add_succ_n_m(n: Nat, m: Nat): Nat.add(Nat.succ(n), m) == Nat.succ(Nat.add(n, m))
+//add_succ_n_m(n: Nat, m: Nat): Nat.add(Nat.succ(n), m) == Nat.succ(Nat.add(n, m))
+//    case n {
+//        zero: refl //?a-19
+//        succ: refl
+//            //let ind = add_succ_n_m(n)
+//            //?a-43
+//            //let app = apply(Nat.succ(ind))
+//            //app
+//            //?a
+//    }!
+
+
+add_n_succ_m(n: Nat, m: Nat): Nat.add(n, Nat.succ(m)) == Nat.succ(Nat.add(n, m))
     case n {
-        zero: refl //?a-19
+        zero: refl
         succ: 
-            let ind = add_succ_n_m(n)
-            let app = apply(Nat.succ, ind)
-            app
+            let  ind = add_n_succ_m(n)
+            //let app = apply(Nat.succ(ind))
+            ?a-19
+            //
+            //app
     }!
-
-
-
 
