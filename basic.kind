@@ -1,0 +1,27 @@
+// Basic
+
+//inc(a: Nat): Nat // increment  
+//    Nat.succ(a)
+
+//dec(a: Nat): Nat // decrement  
+//  Nat.pred(a)
+
+//neg(b: Bool): Bool // negation
+//     case b {
+//        true: false
+//        false: true
+//     }
+
+//and(a: Bool, b: Bool): Bool // and 
+//    case a {
+//        true: true
+//        false: true
+//       }
+
+
+//or(a: Bool, b: Bool): Bool //or 
+//    case a {
+//        true: true
+//        false: false
+//        }
+
