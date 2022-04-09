@@ -41,10 +41,11 @@
 //    false: refl
 //  }!
 
-//half_double_theorem(n: Nat): Nat.half(Nat.double(n)) == n
+
+//half_double_theorem(n: Nat): Nat.half(Nat.double(n)) == n    
 //    case n {
 //        zero: refl=
-//        succ:
+//        succ: 
 //            let ind = half_double_theorem(n.pred)
 //            let app = apply(Nat.succ, ind)
 //            app 

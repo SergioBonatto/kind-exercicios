@@ -30,7 +30,9 @@ sub(a: Nat, b: Nat): Nat //  ubtraction
     case a{
         zero: Nat.zero
         succ: Nat.succ(Nat.sub(a.pred, b))
-    }
+
+}
+
 
 //  ?s
 
