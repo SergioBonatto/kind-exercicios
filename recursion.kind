@@ -1,18 +1,21 @@
-
 // Recursion
+half(a: Nat): Nat // half              
+  case a {  
+    zero: Nat.zero
+    succ: Nat.succ(Nat.half(a.pred))
+  }
 
-//half(a: Nat): Nat // half
-//    case a {
-//        zero: Nat.zero
-//        succ: Nat.succ(Nat.half(a.pred))
-//    }
+
+recursion:_
+half(3)
+double(a: Nat): Nat // double
+  case a {
+    zero: Nat.zero
+    succ: Nat.succ(Nat.double(a.pred))
+
+}
 
 
-//double(a: Nat): Nat // double
-//    case a {
-//        zero: Nat.zero
-//        succ: Nat.succ(Nat.double(a.pred))
-//        }
 
 //add(a: Nat, b: Nat): Nat // addition
 //     case a{
@@ -26,13 +29,11 @@
 //        succ: Nat.succ(Nat.mul(a.pred, b))
 //     }
 
-sub(a: Nat, b: Nat): Nat //  ubtraction
-    case a{
-        zero: Nat.zero
-        succ: Nat.succ(Nat.sub(a.pred, b))
-
-}
-
+//sub(a: Nat, b: Nat): Nat //  subtraction
+//    case a{
+//        zero: Nat.zero
+//        succ: Nat.succ(Nat.sub(a.pred, b))
+//}
 
 //  ?s
 
@@ -40,9 +41,18 @@ sub(a: Nat, b: Nat): Nat //  ubtraction
 // 5 - 4 = 1
 
 //factorial(a: Nat): Nat // factorial
-//  ?f
+//   case a {
+//        zero: Nat.zero
+//        succ: Nat.succ(factorial(a.pred))
+//}
 
-//div(a: Nat, b: Nat): Nat // division
+
+//div(a: Nat, b: Nat): Nat // division 
+//    case a{
+//        zero: Nat.zero
+//        succ: Nat.succ(Nat.div(a.pred, b))
+//}
+
 //  ?d
 
 //div 1/2 = 0
@@ -51,12 +61,44 @@ sub(a: Nat, b: Nat): Nat //  ubtraction
 //round down
 
 //equal(a: Nat, b: Nat): Bool // Given 2 numbers, it returns true if the 2 are the same and false if they are different.
+//    case a{
+//        zero: case b{
+//            zero: Bool.true
+//            succ: Bool.false
+//          }!
+//        succ: Nat.eql(a, b)
+//      }!
+
 //  ?e
 
 //gtn(a: Nat, b: Nat): Bool // if A > B == True else false
+//  case a { 
+//        zero: Bool.false
+//        succ: case b {
+//                    zero: Bool.true
+//                    succ: Nat.gtn(a, b)
+//                      
+//                }
+//      }
+
 //  ?g
 
-//ltn(a: Nat, b: Nat): Bool // if A > B == False else true
+
+ltn(a: Nat, b: Nat): Bool // if A > B == False else true
+  case a{ 
+    zero: case b {
+            zero: false
+            succ: true  
+    }
+    succ: Nat.ltn(a.pred, b)
+      }
 //  ?l
 
 // Cannot use Bool.not
+//ltn: 3 2
+recursion:_ 
+  ltn(1,2)
+
+
+
+

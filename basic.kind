@@ -1,16 +1,16 @@
 // Basic
 
-//inc(a: Nat): Nat // increment  
-//    Nat.succ(a)
+inc(a: Nat): Nat // increment   
+ Nat.succ(a)
 
 //dec(a: Nat): Nat // decrement  
 //  Nat.pred(a)
 
-//neg(b: Bool): Bool // negation
-//     case b {
-//        true: false
-//        false: true
-//     }
+neg(b: Bool): Bool // negation
+case b {
+        true: false
+        false: true
+     }
 
 //and(a: Bool, b: Bool): Bool // and 
 //    case a {

@@ -1,0 +1,21 @@
+// Proof that addition is commutative
+Nat.add.comm(a: Nat, b: Nat): (a + b) == (b + a)
+  case a {
+    zero:
+      Nat.add.zero(b)
+    succ: 
+      p0 = Nat.add.succ(b, a.pred)
+      p1 = Nat.add.comm(b, a.pred)
+      p0 :: rewrite X in Nat.succ(X) == _ with p1
+  }!
+
+// Double negation
+double_negation(b: Bool): Bool.not(Bool.not(b)) == b
+  case b {
+    true: ?a-
+    false: ?b-
+  }!
+
+// A non-inductive proof
+addZeroToN(n: Nat): (0 + n) == n
+  refl

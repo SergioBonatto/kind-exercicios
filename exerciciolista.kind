@@ -1,0 +1,43 @@
+// List
+
+first_element<A: Nat>(xs: List<Nat>): Nat // Returns the first value of a list     
+  case xs {
+    nil: Nat.zero  
+    cons: xs.head//Nat.pred(Nat.succ(xs.head))
+  } 
+exerciciolista:
+  let teste1 = [7,2,4]
+  first_element!(teste1)
+
+
+// If the list is empty, just return 0
+
+//remove_first<A: Nat>(xs: List<Nat>): List<Nat> // Returns the list without its first value
+  
+ // ?l
+
+// input     ->  output
+// [1,2,3,4] -> [2,3,4]
+// [5,8,1,3] -> [8,1,3]
+// []        -> []
+
+//reverse(xs: List<Nat>): List<Nat> //Inverts all values ​​in the list
+  
+ // ?r
+
+// [1,2,3,4] -> [4,3,2,1]
+// [5,8,1,3] -> [3,1,8,5]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
